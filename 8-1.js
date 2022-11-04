@@ -23,6 +23,7 @@ if (exp > 1000) total = total + exp
 console.log(total);
 
 //2 часть 
+//вывести все значения массива через цикл и мeтод forEach
 
 for (let expense of expenses) {
   expense.expenses.forEach(function(ex,index) 
@@ -31,13 +32,13 @@ for (let expense of expenses) {
   })
 };
 
+// вывести только больше 1000 через цикл и метод filter 
 for (let expense of expenses) {
-  let = exp1000 = expense.expenses.filter((ex) => {
+  let exp1000 = expense.expenses.filter((ex) => {
     return ex > 1000
   })
   console.log(exp1000)
 }
 
-
-
-
+//
+expenses.forEach(expenses => expenses.expenses.forEach(expense => console.log(expense))); 
